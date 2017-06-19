@@ -1,0 +1,70 @@
+<!--index.wxml-->
+<view class="header">
+  <view class="title">{{title}}</view>
+  
+  <view class="tomorrow" wx:if='{{tomorrow=="规划明天"}}' bindtap="tomorrowclick">
+   {{tomorrow}}
+  </view>
+  <view class="tomorrow" wx:if='{{tomorrow=="返回今天"}}' bindtap="todayclick">
+   {{tomorrow}}
+  </view>  
+</view>
+
+<view class="content">
+  <form bindsubmit="searchSubmit">
+      <view class="container">
+          <view class="inputBox">
+            <view class="inputIcon">{{name}}</view>
+            <view class="inputText">
+                <input type="text" name="userName" value="{{userName}}"   placeholder="{{nameINput}}" bindblur="userNameInput" />
+            </view>
+          </view>
+      </view>
+      <view class="container">
+          <view class="inputBox">
+            <view class="inputIcon">{{task}}</view>
+            <view class="inputText">
+                <input type="text"   placeholder="{{taskText}}"  confirm-type="done" bindconfirm="onkeydowns" value="{{taskInput}}"/>
+            </view>
+          </view>
+      </view>
+   </form>  
+  <view class="container">
+    <view class="textView">
+      <view class="textTime">{{time}}</view>
+      <view class="textList">
+        <view wx:for="{{taskArray}}" wx:for-index="index" wx:for-item="taskArray" class="list">
+          <view class="text">
+                    <text >{{taskArray.text}}</text> 
+          </view>        
+          <view class="box">
+            <checkbox-group bindchange="checkboxTap" id="{{taskArray.id}}">           
+                <checkbox value="{{taskArray.id}}"  checked="{{taskArray.status}}"/>
+            </checkbox-group>
+
+            <view class="section section_gap  sider" >
+              <slider name="slider" id="{{taskArray.id}}" value="{{taskArray.progress}}" show-value bindchange="proessFun"></slider>
+            </view>          
+            <button id="{{taskArray.id}}" bindtap="delData">删除</button>
+          </view>
+
+        </view>
+      
+      </view>
+    </view>
+  </view>
+
+</view>
+<view wx:if="{{!subZt}}">
+  <button  class="stb">{{subText}}</button>
+<navigator  class="history green" url="../history/history">记录查看</navigator>
+</view>
+
+<view wx:if="{{subZt}}">
+  <button  class="stb bared" bindtap="subData">{{subText}}</button>
+<navigator  class="history green" url="../history/history">记录查看</navigator> 
+</view>
+
+<view class="zz">
+  <!--<image  src="../pages/loading.gif"></image>-->
+</view>

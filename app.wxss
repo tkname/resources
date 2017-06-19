@@ -1,0 +1,25 @@
+/**app.wxss**/
+.container {
+  display: flex;
+
+} 
+.clear{
+  clear: both;
+}
+
+.header{
+  background-color: #7e57c2;
+  height: 56px;
+  padding: 0 8px;
+  line-height: 56px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  color: #fff;
+
+}
+
+.zi{
+  background: #7e57c2;
+  color: #fff;
+}

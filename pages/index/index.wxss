@@ -1,0 +1,138 @@
+/**index.wxss**/
+
+.header{
+  background-color: #7e57c2;
+  height: 56px;
+  padding: 0 8px;
+  line-height: 56px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  color: #fff;
+
+}
+.header .title{
+  -webkit-box-flex:8;
+  -moz-box-flex: 8;
+  box-flex:8;
+  font-size: 20px;
+}
+.header .tomorrow{
+  -webkit-box-flex:2;
+  -moz-box-flex: 2;
+  box-flex:2;
+  text-align: right;
+  font-size: 14px;
+}
+
+.container .inputBox{
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  width: 90%;
+  padding: 0 5%;
+  margin-top: 20px;
+}
+.container .inputBox .inputIcon{
+  -webkit-box-flex: 2;
+  -moz-box-flex: 2;
+  box-flex:2;
+}
+.container .inputBox .inputText{
+  -webkit-box-flex: 8;
+  -moz-box-flex: 8;
+  box-flex:8;
+}
+
+.container .inputBox .inputText input{
+    border-bottom: 1px solid #eee;
+}
+
+.container textarea{
+  border: 1px solid #7e57c2;
+}
+
+.textView{
+  width: 100%;
+  margin:40px 5px 0  5px;
+  border: 1px solid #eee;
+  min-height: 200px;
+  box-shadow:0 2px 15px gainsboro ;
+}
+
+.textView .textTime{
+  font-size: 25px;
+  padding: 10px 0px 0 20px;
+}
+.textView .textList{
+  margin-top: 20px;
+  padding: 10px 20px 20px 20px;
+}
+.textView .textList .list{
+  display: block;
+  width: 100%;
+  position: relative;
+  min-height: 40px;
+  position: relative;
+}
+.textView .textList .box{
+  position: relative;
+  height: 30px;
+  line-height: 30px;
+}
+.textView .textList checkbox-group{
+  position: absolute;
+  top:0;
+  left: 0;
+}
+.textView .textList text{
+  display: block;
+  margin: 10px 0 10px 0;
+}
+.textView .textList button{
+  position: absolute;
+  top: 0px;
+  right: 0;
+  height: 30px;
+  margin-top:3px;
+  background: #ff4527;
+  color: #fff;
+  line-height: 30px;
+}
+
+.sider{
+  margin: 0 70px 0 40px;
+}
+/*.sider slider{
+
+}*/
+
+.stb{
+  margin: 40px 20px 0 20px;
+}
+.bared{
+  background: #ff4081;
+  color: #fff;  
+}
+.green{
+  background: #1aad16;
+  color: #fff;
+  margin-top: 10px;
+}
+.history{
+  height: 46px;
+  line-height: 46px;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+/*.zz{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+
+}*/
